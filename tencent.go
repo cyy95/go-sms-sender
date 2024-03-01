@@ -39,7 +39,7 @@ func GetTencentClient(accessId string, accessKey string, sign string, templateId
 	config := profile.NewClientProfile()
 	config.HttpProfile.ReqMethod = "POST"
 
-	region := "ap-guangzhou"
+	region := "ap-beijing"
 	client, err := sms.NewClient(credential, region, config)
 	if err != nil {
 		return nil, err
